@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Código de autorización</title>
+</head>
+<body>
+    <h1>Código de autorización</h1>
+    <p id="codigo"></p>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        document.getElementById('codigo').textContent = code;
+    </script>
+</body>
+</html>
